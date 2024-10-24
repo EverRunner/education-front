@@ -1,0 +1,789 @@
+@media only screen and (max-width: 768px) {
+  .account-data ul li p {
+    font-size: 28px !important;
+  }
+  .account-info-left .formerly em {
+    font-size: 22px !important;
+  }
+  .account-info-left__content {
+    padding-top: 10px !important;
+  }
+  .account-info-right__contetn span {
+    font-size: 22px !important;
+  }
+  .account-info-right__contetn p {
+    font-size: 14px !important;
+  }
+  .account-info-btn span {
+    margin-right: 0 !important;
+  }
+  .account-info-right {
+    padding-top: 40px;
+  }
+  .account {
+    &-data {
+      padding: 40px 0 !important;
+      text-align: center;
+      border-top: 1px rgba(255, 255, 255, 0.5) solid;
+      ul li p span {
+        font-size: 26px !important;
+      }
+      ul li span {
+        font-size: 12px !important;
+      }
+    }
+  }
+  .account-info-left__content .thumb {
+    display: none;
+  }
+  .account-info-left__content .details {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .footer-wp-logo {
+    padding-bottom: 0 !important;
+  }
+
+  .login-wp-content .desc {
+    padding: 5px 0 20px;
+  }
+  .header {
+    padding: 0px 0;
+  }
+  .header-mobile img {
+    height: 40px !important;
+  }
+  .study-button-next,
+  .study-button-prev {
+    display: none !important;
+  }
+
+  .pay-success-wp {
+    padding: 0 20px;
+  }
+  .matching .study-practice {
+    padding: 10px 0;
+  }
+  .study .matching-nav li {
+    padding: 0 1px;
+  }
+  .study .matching-left-title {
+    font-size: 14px;
+    margin: 15px 0 15px 10px;
+    background-size: 20px;
+    padding-left: 24px;
+  }
+  .study .matching-nav li i {
+    font-size: 16px;
+  }
+  .study .matching-left-back .back {
+    padding: 15px 10px 15px 0;
+    font-size: 14px;
+  }
+  .el-radio__label {
+    font-size: 22px !important;
+  }
+  .matching-right {
+    min-height: 65vh;
+  }
+
+  .study-word-left .rgiht-title-btn i {
+    width: 20px;
+  }
+
+  .details-popup {
+    .el-dialog {
+      width: 85% !important;
+    }
+    &-video {
+      padding-top: 60%;
+    }
+  }
+
+  .letter {
+    .wp {
+      padding: 10px 20px 25px 10px !important;
+    }
+  }
+
+  .final-dialog {
+    .el-dialog {
+      width: 85% !important;
+    }
+  }
+
+  .honours-user-content li {
+    width: 100% !important;
+  }
+
+  .honours-user-thumb {
+    display: none !important;
+  }
+}
+
+// 手机屏幕以上
+@media only screen and (min-width: 768px) {
+  .login-wp {
+    width: 440px;
+  }
+  .study {
+    &-nav {
+      width: 1200px;
+      &-bg {
+        background: #f6f6f6;
+      }
+      ul {
+        padding: 30px 0;
+      }
+      li {
+        span {
+          font-size: 16px;
+        }
+        .icon {
+          font-size: 16px;
+          width: 32px;
+          height: 32px;
+          line-height: 30px;
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    &-practice {
+      padding: 40px 80px;
+      &-title {
+        h5 {
+          font-size: 24px;
+        }
+        .countdown {
+          font-size: 24px;
+          padding-top: 0px;
+          justify-content: flex-end;
+        }
+      }
+      &-topic {
+        padding: 40px 50px;
+        .title {
+          font-size: 24px;
+        }
+      }
+    }
+    &-video {
+      padding: 40px;
+      &-title {
+        display: flex;
+        h4 {
+          font-size: 22px;
+          padding-bottom: 0px;
+        }
+      }
+      &-btn {
+        padding: 30px 0 50px;
+      }
+    }
+    &-word {
+      &-left {
+        .left-title {
+          padding-top: 40px;
+          h6 {
+            font-size: 22px;
+            height: 28px;
+            padding-left: 47px;
+          }
+        }
+        .but {
+          display: block;
+          &-item {
+            margin-bottom: 40px;
+          }
+        }
+        .rgiht-title {
+          padding: 40px 0;
+          h4 {
+            font-size: 24px;
+          }
+        }
+      }
+      &-rgiht {
+        // padding: 40px;
+        .content {
+          &-box {
+            min-height: 400px;
+          }
+          &-text {
+            padding: 20px 90px;
+          }
+        }
+      }
+    }
+    .matching-right {
+      padding: 30px;
+      &-ul {
+        width: 80%;
+        li {
+          margin: 0 20px 20px 0;
+          width: 42%;
+        }
+      }
+    }
+  }
+  .details {
+    &-info {
+      .thumb {
+        img {
+          height: 242px;
+        }
+      }
+      &-right {
+        padding-top: 0px !important;
+        padding-left: 30px !important;
+      }
+      &-wp {
+        display: flex;
+      }
+    }
+  }
+  .pay {
+    padding: 30px 0;
+    &-wp {
+      background-color: #fff;
+      padding: 60px;
+      border-radius: 3px;
+    }
+    &-account {
+      &-top {
+        span {
+          text-align: right;
+        }
+      }
+    }
+    &-course {
+      &-btn {
+        text-align: right;
+      }
+      &-content {
+        display: flex;
+        justify-content: space-between;
+        .info {
+          display: flex;
+          align-items: center;
+          img {
+            height: 80px;
+            width: auto !important;
+          }
+          h5 {
+            padding-top: 0px;
+          }
+        }
+        .price {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .test-results {
+    &-list {
+      padding: 40px 50px;
+      .topic-title {
+        font-size: 20px;
+        padding: 30px 0 30px;
+      }
+    }
+    &-info {
+      padding: 60px 50px 40px;
+      .title {
+        line-height: inherit;
+      }
+    }
+  }
+
+  .account-index-dialog {
+    .el-dialog {
+      width: 60% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .details-popup {
+    .el-dialog {
+      width: 80% !important;
+    }
+    &-video {
+      padding-top: 60%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .account-index-dialog {
+    .el-dialog {
+      width: 40% !important;
+    }
+  }
+  .wp {
+    width: 1200px;
+    margin: auto;
+  }
+  .account {
+    &-list {
+      &-tabs {
+        .course-item-list li .left p {
+          width: auto;
+        }
+      }
+      &-right {
+        padding-left: 20px;
+      }
+    }
+    &-info {
+      &-btn {
+        justify-content: flex-end;
+      }
+    }
+  }
+  .matching-right {
+    padding: 30px;
+  }
+}
+
+// 新版本设计 2022-3
+
+// 大于 768px
+@media only screen and (min-width: 768px) {
+  .home {
+    &-banner {
+      &-thumb {
+        padding: 0 50px;
+      }
+      &-video {
+        &-title {
+          h2 {
+            font-size: 32px;
+          }
+        }
+        &-btn {
+          span {
+            width: 125px;
+            em {
+              padding: 12px 0;
+            }
+          }
+        }
+      }
+      &-nav {
+        .btn {
+          p {
+            margin-right: 30px;
+          }
+          span {
+            width: 120px;
+            font-size: 16px;
+            &.two {
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+      &-content {
+        .text {
+          padding-top: 25px;
+        }
+      }
+      &-content {
+        .br {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .login-content {
+    &-form {
+      width: 80%;
+      .or {
+        margin: 35px 0 40px;
+      }
+    }
+    &-register {
+      padding: 30px;
+    }
+    &-form {
+      h2 {
+        font-size: 36px;
+        padding-bottom: 35px;
+      }
+    }
+    &-password {
+      .title h3 {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .footer {
+    &-addr {
+      padding-bottom: 0 !important;
+      padding-top: 15px;
+    }
+    &-ewm {
+      justify-content: flex-end !important;
+    }
+    &-copyright {
+      text-align: left !important;
+      &-addr {
+        align-items: center !important;
+      }
+      &-qita {
+        text-align: right;
+      }
+    }
+  }
+
+  .header {
+    &-content {
+      width: 1200px;
+      margin: auto;
+      padding: 0 25px;
+    }
+  }
+
+  .personage {
+    &-datum {
+      padding: 40px;
+    }
+    &-info {
+      li {
+        padding: 33px 0;
+      }
+    }
+    &-set {
+      li {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 33px 0;
+        .left {
+          width: auto;
+        }
+        .el-button {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .chapter {
+    &-list {
+      &-step {
+        li {
+          .title {
+            p {
+              display: block;
+            }
+          }
+          .btn {
+            &-info {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+  .account {
+    &-title {
+      h1 {
+        font-size: 40px;
+      }
+    }
+    &-dear {
+      &-content {
+        .left {
+          h5 {
+            font-size: 18px;
+          }
+          &-bnts {
+            .el-button--big span {
+              font-size: 18px;
+            }
+          }
+          &-study {
+            padding-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  // 学习部分
+  .studys {
+    &-word {
+      &-content {
+        .word {
+          width: 718px;
+          height: 421px;
+          li {
+            height: 400px;
+          }
+          &-front {
+            &-text {
+              font-size: 32px;
+            }
+          }
+          &-back {
+            &-text {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+      &-test {
+        &__title {
+          .h5 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    &-results {
+      &-head {
+        flex-direction: row;
+        .text {
+          h5 {
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+        .btns {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .pass-user-content__right {
+    padding: 0;
+  }
+
+  .pass-apply-dialog {
+    .el-dialog {
+      width: 645px !important;
+    }
+  }
+}
+
+// 大于 992px
+@media only screen and (min-width: 992px) {
+  .home {
+    &-video {
+      &-title {
+        h2 {
+          font-size: 34px;
+        }
+      }
+      &-btn {
+        span {
+          width: 130px;
+        }
+      }
+    }
+  }
+  .login-content {
+    &-title {
+      display: none;
+    }
+  }
+
+  .footer {
+    &-addr {
+      align-items: flex-end !important;
+    }
+    &-ewm {
+      justify-content: flex-start !important;
+    }
+  }
+
+  .account {
+    .wp {
+      width: 1200px;
+    }
+  }
+
+  .details {
+    .wp {
+      width: 1200px;
+    }
+  }
+
+  .pass {
+    &-apply {
+      padding: 100px 15px;
+      &-title {
+        padding-bottom: 100px;
+      }
+      &-license {
+        &__btn {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+// 大于 1200px
+@media only screen and (min-width: 1200px) {
+  .layout {
+    width: 1200px;
+  }
+  .login-content {
+    &-title {
+      display: none;
+    }
+    &-form {
+      width: 65%;
+    }
+  }
+  .footer {
+    &-logo {
+      padding-bottom: 0 !important;
+      padding-top: 15px;
+      justify-content: flex-start !important;
+    }
+    &-ewm {
+      justify-content: flex-end !important;
+    }
+  }
+  .header {
+    &-content {
+      width: 1200px;
+      margin: auto;
+      padding: 0;
+    }
+  }
+
+  .studys {
+    &-test {
+      &-title {
+        padding: 30px;
+        &__times {
+          position: absolute;
+          justify-content: center;
+          margin-bottom: 0px;
+          .index {
+            flex-direction: column;
+            justify-content: space-between;
+            li {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .account {
+    &-dear {
+      &-content {
+        .left {
+          &-bnts {
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            padding-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .home {
+    &-wp {
+      margin: auto;
+      width: 1140px;
+      padding: 0;
+    }
+    &-video {
+      &-title {
+        h2 {
+          font-size: 38px;
+        }
+      }
+      &-btn {
+        span {
+          width: 140px;
+          em{
+            font-size: 18px;
+            padding: 15px 0;
+          }
+        }
+      }
+    }
+
+    &-text {
+      // padding-top: 200px;
+    }
+    &-video {
+      &-item {
+        .row {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    &-contrapose {
+      &-item {
+        .row {
+          p {
+            padding-right: 0;
+          }
+        }
+      }
+      &-text {
+        font-size: 22px;
+      }
+    }
+    &-system {
+      display: flex;
+      align-items: center;
+    }
+    &-footer {
+      &-btn {
+        font-size: 24px;
+        width: 60%;
+        em {
+          font-size: 22px;
+        }
+      }
+      &-qr {
+        .line {
+          height: 180px;
+        }
+        .text {
+          h5 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+      &-text {
+        p {
+          font-size: 22px;
+        }
+        em {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+// 大于 1920px
+@media only screen and (min-width: 1920px) {
+  .login-content-form {
+    width: 50%;
+  }
+}

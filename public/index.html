@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!-- <meta http-equiv="pragram" content="no-cache" />
+    <meta
+      http-equiv="cache-control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache" content="no-cache" /> -->
+    <meta
+      name="keywords"
+      content="联邦考试,联邦按摩考试,按摩执照,联邦按摩认证考试，联邦按摩执照考试,联邦按摩考试培训,按摩师"
+    />
+    <meta
+      name="description"
+      content="易北教育，在线辅导按摩执照联邦考试的机构。边工作边学习，在线模拟测试，快捷高效！【联邦按摩考试】"
+    />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>美国联邦按摩师考试辅导 - 易北教育</title>
+  </head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EK56FDJB96"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-EK56FDJB96');
+</script> -->
+
+  <style>
+    #public-loading {
+      position: fixed;
+      top: 50%;
+      right: 0;
+      left: 0;
+      transform: translateY(-65%);
+      text-align: center;
+      opacity: 0;
+    }
+    #public-loading img {
+      width: 500px;
+      max-width: 100%;
+    }
+
+    #public-loading p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #4e66fb;
+      margin: 0;
+      padding: 10px 0;
+      color: #777;
+    }
+
+    #public-loading .load-wrapp {
+      width: 100px;
+      height: 50px;
+      padding-bottom: 20px;
+      border-radius: 5px;
+      text-align: center;
+      margin: auto;
+    }
+
+    #public-loading .load-wrapp p {
+      padding: 0 0 20px;
+    }
+    #public-loading .load-wrapp:last-child {
+      margin-right: 0;
+    }
+
+    #public-loading .line {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 15px;
+      background-color: #4365e4;
+      margin: 0 2px;
+    }
+
+    #public-loading .bar {
+      float: left;
+      width: 15px;
+      height: 6px;
+      border-radius: 2px;
+      background-color: #4b9cdb;
+    }
+
+    #public-loading .load-3 .line:nth-last-child(1) {
+      animation: loadingC 0.6s 0.1s linear infinite;
+    }
+    #public-loading .load-3 .line:nth-last-child(2) {
+      animation: loadingC 0.6s 0.2s linear infinite;
+    }
+    #public-loading .load-3 .line:nth-last-child(3) {
+      animation: loadingC 0.6s 0.3s linear infinite;
+    }
+
+    @keyframes loadingC {
+      0 {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(0, 15px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
+
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app">
+      <div id="public-loading">
+        <!-- <img src="./loading.gif" alt="" /> -->
+        <div class="load-wrapp">
+          <div class="load-3">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <p>页面加载中，请耐心等待...</p>
+      </div>
+    </div>
+
+    <!-- built files will be auto injected -->
+
+    <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+    <script src="./player.js"></script>
+    <script>
+      const dom = document.getElementById("public-loading");
+
+      function getHashUrlParameter(paramName) {
+        // 获取URL中的哈希部分（包括#）
+        var hash = window.location.hash;
+
+        // 判断哈希中是否包含查询字符串（以?开头的部分）
+        var hashQueryStringIndex = hash.indexOf("?");
+        if (hashQueryStringIndex !== -1) {
+          // 提取查询字符串并去掉开头的?
+          var queryString = hash.substring(hashQueryStringIndex + 1);
+
+          // 使用URLSearchParams解析查询字符串
+          var queryParams = new URLSearchParams(queryString);
+
+          // 返回指定参数的值
+          return queryParams.get(paramName);
+        }
+
+        // 如果没有找到对应的参数，则返回null或者自定义的默认值
+        return null;
+      }
+
+      const showLoading = getHashUrlParameter("showLoading");
+
+      if (!showLoading) {
+        dom.style.opacity = 1;
+      }
+
+      // setTimeout(() => {
+      //   if (dom && !showLoading) alert("页面加载失败，请刷新几次页面后重试！");
+      // }, 1000 * 60);
+    </script>
+  </body>
+</html>
